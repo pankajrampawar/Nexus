@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
                         <nav className="md:hidden">
                             <NavBar/>
                         </nav>
-                        <nav className="hidden sm:flex min-w-[300px] max-w-[500px] h-full">
+                        <nav className="hidden sm:flex sm:min-w-[300px] sm:max-w-[500px] sm:h-full">
                             <Sidebar/>
                         </nav>
                     </header>
