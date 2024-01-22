@@ -7,7 +7,7 @@ export const navLinks = [
     {
         name: "Explore",
         link: "Explore",
-        img: "/explore.svg"
+        img: "/search.svg"
     },
     {
         name: "Activity",

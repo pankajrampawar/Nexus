@@ -1,4 +1,4 @@
-import { Keania_One, Roboto, Inter } from "next/font/google";
+import { Keania_One, Roboto, Inter, Krub } from "next/font/google";
 
 export const keania = Keania_One({
     subsets: ['latin'],
@@ -12,4 +12,9 @@ export const inter = Inter({
 export const roboto = Roboto({
     subsets: ['latin'],
     weight: ["400"]
+})
+
+export const krub = Krub({
+    subsets: ['latin'],
+    weight: ['700']
 })
