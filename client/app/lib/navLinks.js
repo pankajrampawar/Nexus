@@ -11,17 +11,17 @@ export const navLinks = [
     },
     {
         name: "Activity",
-        link: "Avtivity",
+        link: "Activity",
         img: "/filter.svg",
     }, 
     {
         name: "Notifications",
-        link: "Notifications",
+        link: "Notification",
         img: "/bell.svg",
     },
     {
         name: "Settings",
-        link: "settings",
+        link: "Settings",
         img: "/settings.svg"
     }
 ]
