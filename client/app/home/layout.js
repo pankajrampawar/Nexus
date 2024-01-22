@@ -1,5 +1,5 @@
 import NavBar from "../ui/Navbar"
-
+import Sidebar from "../ui/Sidebar"
 
 
 export default function RootLayout({ children }) {
@@ -7,8 +7,11 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body>
                 <header>
-                    <nav>
+                    <nav className="md:hidden">
                         <NavBar/>
+                    </nav>
+                    <nav>
+                        <Sidebar/>
                     </nav>
                 </header>
 

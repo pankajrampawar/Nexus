@@ -10,7 +10,7 @@ import { keania } from '../fonts';
 
 export default function NavBar() {
 
-    const [isDrawerOpen, setIsDrawerOpen] = React.useState(true);
+    const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
 
     const handleDrawerToggle = () => {
         setIsDrawerOpen((prev) => !prev)
@@ -21,7 +21,7 @@ export default function NavBar() {
             <div className={`${keania.className} flex flex-col gap-5 px-14 pb-10` }>
                 {   // implement clsx styling here.
                     navLinks.map((element) => (
-                        <Link href={element.link}>
+                        <Link href={element.link} key={element.name}>
                             <div className='flex gap-1 text-2xl font-medium items-center justify-center sm:justify-start border-b border-b-white pb-2'>
                                 <div>{element.name}</div> 
                             </div>

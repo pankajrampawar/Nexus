@@ -1,9 +1,19 @@
 'use client'
 
+import CraftCard from "../ui/craftCard"
+
 export default function Home() {
     return (
         <main>
-            This is home page
+            <CraftCard/>
+            <CraftCard />
+            <CraftCard />
+            <CraftCard />
+            <CraftCard />
+            <CraftCard />
+            <CraftCard />
+            <CraftCard />
+            <CraftCard />
         </main>
     )
 }
