@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const connectDB = require('./db')
+const craftRoute = require('./routes/craftRoute');
 const port = 8080;
 
 app.get('/', (req, res) => {
@@ -8,6 +9,8 @@ app.get('/', (req, res) => {
 });
 
 connectDB();
+
+app.use('/craft', craftRoute);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

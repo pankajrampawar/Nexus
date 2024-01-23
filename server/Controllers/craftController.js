@@ -8,3 +8,21 @@ exports.getAllCrafts = async (req, res) => {
         res.status(500).json({ message: "unalbe to get crafts controller error"})
     }
 };
+
+exports.addCraft = async (req, res) => {
+    try {
+        const { userId, content } = req.body;
+
+        const newCraft = new CraftModel({
+            userId: userId,
+            content: content
+        });
+
+        newCraft.save()
+
+        res.status(200).json({ message: "craft posted successfully", craft: newCraft});
+
+    } catch (error) {
+        res.status(500).json({ message: "internal server error, controller error", error })
+    }
+}

@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 
 const CraftSchema = new mongoose.Schema({
-    user: {
+    userId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
+        ref: 'User',
+        required: true
     },
     
     content: {
