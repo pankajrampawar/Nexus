@@ -1,5 +1,6 @@
-import NavBar from "../ui/Navbar"
+import SearchSection from "../ui/SearchSection"
 import Sidebar from "../ui/Sidebar"
+import NavBar from "../ui/Navbar"
 
 
 export default function RootLayout({ children }) {
@@ -11,7 +12,7 @@ export default function RootLayout({ children }) {
                         <nav className="md:hidden">
                             <NavBar/>
                         </nav>
-                        <nav className="hidden sm:flex sm:min-w-[300px] sm:max-w-[500px] sm:h-full">
+                        <nav className="hidden md:flex min-w-[300px] max-w-[500px] h-full">
                             <Sidebar/>
                         </nav>
                     </header>
@@ -19,6 +20,10 @@ export default function RootLayout({ children }) {
                     <main className="sm:overflow-y-auto"> 
                         {children}
                     </main>
+
+                    <section>
+                        <SearchSection/>
+                    </section>
                 </div>
             </body>
         </html>
