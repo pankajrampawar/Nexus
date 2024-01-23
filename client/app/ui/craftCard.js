@@ -6,7 +6,7 @@ import { inter, roboto } from '../fonts';
 
 export default function CraftCard() {
     return (
-        <main className='bg-slate-50 p-2 flex flex-col gap-2 my-2 border-y border-black max-w-[650px]'>
+        <main className='bg-gray-100 p-2 flex flex-col gap-2 my-2 border-y border-black max-w-[650px]'>
             <section className='flex gap-2'>
                 <div className='min-w-[40px]'>
                     <div className='w-auto h-auto'>
