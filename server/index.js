@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const connectDB = require('./db')
-const craftRoute = require('./routes/craftRoute');
+const craftRoute = require('./routes/craftRoutes');
 const port = 8080;
 
 app.get('/', (req, res) => {
