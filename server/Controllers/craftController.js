@@ -11,14 +11,18 @@ exports.getAllCrafts = async (req, res) => {
 
 exports.addCraft = async (req, res) => {
     try {
-        const { userId, content } = req.body;
+        const { content } = req.body;
+
+        if (!content) {
+            res.status(400).json({ message: "content is requried" })
+        }
 
         const newCraft = new CraftModel({
             userId: userId,
             content: content
         });
 
-        newCraft.save()
+        await newCraft.save()
 
         res.status(200).json({ message: "craft posted successfully", craft: newCraft});
 
